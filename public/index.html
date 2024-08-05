@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Sismología</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+    crossorigin=""></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="section-1"><h2>Registro sismológico  &#127464;&#127473</h2></div>
+        <div class="section-1-5"><div class="fila-h3-h4"> <h3>Último sismo registrado</h3><button id="collapsed" class="boton-puntuar"><svg class=stars stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M512.5 190.4l-94.4 191.3-211.2 30.7 152.8 149-36.1 210.3 188.9-99.3 188.9 99.2-36.1-210.3 152.8-148.9-211.2-30.7z"></path><path d="M908.6 352.8l-253.9-36.9L541.2 85.8c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9 14.5L370.3 315.9l-253.9 36.9c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 0 0 .6 45.3l183.7 179.1L239 839.4a31.95 31.95 0 0 0 46.4 33.7l227.1-119.4 227.1 119.4c6.2 3.3 13.4 4.4 20.3 3.2 17.4-3 29.1-19.5 26.1-36.9l-43.4-252.9 183.7-179.1c5-4.9 8.3-11.3 9.3-18.3 2.7-17.5-9.5-33.7-27-36.3zM665.3 561.3l36.1 210.3-188.9-99.2-188.9 99.3 36.1-210.3-152.8-149 211.2-30.7 94.4-191.3 94.4 191.3 211.2 30.7-152.8 148.9z"></path></svg>Ver sismos recientes</button></div></div>
+        <div class="section-1-5-1">
+        </div>
+        <div class="section-2">
+            <div id="element-1" class="data-element">
+                <p class="title-el"> COORDENADAS </p>            
+                <latlon>Latitud: <p class="el" id="el1">-</p></latlon>
+                <latlon>Longitud: <p class="el" id="el2">-</p></latlon>
+            </div>
+            <div class="data-element">
+                <p class="title-el"> FECHA Y HORA LOCAL </p>            
+                <p class="el" id="el3">-</p>
+                <p class="el" id="el4">-</p>
+            </div>
+            <div class="data-element">
+                <p class="title-el"> FECHA Y HORA UTC </p>            
+                <p class="el" id="el5">-</p>
+                <p class="el" id="el6">-</p>
+            </div>
+            <div class="data-element">
+                <p class="title-el"> MAGNITUD </p>            
+                <p class="el" id="el7">-</p>
+                <p class="comodin"></p>
+            </div>
+            <div class="data-element" id="last-data-element">
+                <p class="title-el"> PROFUNDIDAD </p>            
+                <p class="el" id="el8">-</p>
+                <p class="comodin"></p>
+            </div>
+            </div>
+        <div class="section-3" id="map"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
