@@ -1,7 +1,13 @@
 # aplicacion-js-sismologia-segura
 
-<p> Aplicación HTML, CSS y Javascript responsive, fetch de API propia. </p>
+<p> Aplicación para consumo de API, responsive, creada con HTML, CSS y Javascript Vanilla. Middleware CORS </p>
 
-El despliegue de la página se puede ver aquí:
+🚀 Despliegue: 
 
-<strong> Url: </strong> <a> https://aplicacion-js-sismologia-segura.onrender.com/ </a>
+aplicacion-sismologia-production.up.railway.app
+
+
+
+
+
+
